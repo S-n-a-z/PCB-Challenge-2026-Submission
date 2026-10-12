@@ -1,0 +1,24 @@
+# KiCad local/session files
+*.kicad_prl
+*.lck
+~*.lck
+_autosave-*
+*-backups/
+
+# Generated manufacturing and export files
+gerbers/
+manufacturing/
+*.gbr
+*.gbrjob
+*.drl
+*.pos
+*.step
+*.stp
+
+# Local notes that must not be published with the submission
+PRIVATE_SUBMISSION_NOTES.md
+
+# Operating-system clutter
+.DS_Store
+Thumbs.db
+desktop.ini
