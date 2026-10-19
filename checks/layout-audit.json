@@ -1,8 +1,29 @@
 {
   "footprints": 164,
-  "vias": 479,
-  "track_segments": 947,
-  "vias_in_smd_pads": [],
-  "vias_overlapping_ic_courtyards": [],
+  "vias": 526,
+  "track_segments": 1247,
+  "vias_in_smd_pads": [
+    [
+      "b2",
+      143.199964,
+      112.635,
+      "U10",
+      "5"
+    ]
+  ],
+  "vias_overlapping_ic_courtyards": [
+    [
+      "b3",
+      143.0,
+      113.5,
+      "U10"
+    ],
+    [
+      "b2",
+      143.199964,
+      112.635,
+      "U10"
+    ]
+  ],
   "usb_reference_gaps": []
 }
