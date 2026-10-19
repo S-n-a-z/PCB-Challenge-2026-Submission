@@ -1,49 +1,39 @@
 # Submission checklist
 
-The organisers' deadline wording is **midnight on 19 October 2026**. Complete the Microsoft Form linked from the [official challenge repository](https://github.com/Fleming-Society/PCB-Challenge-2026) before the deadline.
+The challenge closes at the end of 19 October 2026. The entry needs a public repository link and a completed [submission form](https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=_oivH5ipW0yTySEKEdmlwtUrHdFLQS5OlbEozvc0DnlUMzJQWkFZVDhVRjZNVTlCQjhHQ0hDSUxSQi4u).
 
-## Design setup
+## Project and placement
 
-- [ ] Open the project in KiCad 10
-- [ ] Configure a four-layer stack on 1.6 mm FR4
-- [ ] Choose inner-layer roles that provide a continuous reference plane for the differential pair
-- [x] Set global minimum track width and clearance to 0.15 mm
-- [x] Set minimum copper-to-edge clearance to 0.3 mm
-- [x] Set minimum via diameter/drill to 0.6 mm / 0.3 mm
-- [x] Set minimum via annular ring to 0.15 mm
+- [x] Start from the organisers' corrected source files.
+- [x] Set up four copper layers and a 1.6 mm stack.
+- [x] Set the current minimum track width and clearance to 0.15 mm and 0.12 mm.
+- [x] Set copper-to-edge clearance to 0.3 mm.
+- [x] Set minimum via diameter, drill and annular ring to 0.6 mm, 0.3 mm and 0.15 mm.
+- [x] Include the supplied custom footprint libraries with the project.
+- [x] Place all 164 components on one contiguous board without overlapping courtyards.
+- [x] Keep the antenna exclusion area off the board.
 
-## Layout completion
+## Routing and checks
 
-- [ ] Draw one contiguous board outline
-- [ ] Place all components without courtyard overlap
-- [ ] Keep traces and vias out of every IC courtyard
-- [ ] Route every connection manually; auto-routing does not count
-- [ ] Keep vias out of pads
-- [ ] Keep the high-speed differential pair over a continuous reference plane
-- [ ] Add sensible ground fill and stitching where appropriate
-- [ ] Minimise the board's bounding-box area
-- [ ] Record final width, height, area, and via count in `README.md`
-
-## Verification
-
-- [ ] Refill all copper zones
-- [ ] Confirm zero unrouted connections
-- [ ] Run KiCad DRC and resolve every error
-- [ ] Review and minimise warnings
-- [ ] Confirm footprints still match their libraries
-- [ ] Re-open the project from a clean checkout to catch missing files
+- [x] Route the USB pair and check the ground fill beneath its main traces.
+- [x] Route the supply, clock and reset networks.
+- [x] Route the mux-to-register links, two-stage synchroniser links and comparator gate links.
+- [x] Check for vias in SMD pads and vias overlapping IC courtyards.
+- [ ] Finish the 63 remaining connections.
+- [ ] Review traces against the same-layer IC courtyard restriction.
+- [ ] Resolve or account for the symbol and footprint mismatches in the parity report.
+- [ ] Refill all copper zones and run DRC with zero unresolved errors.
+- [ ] Review the remaining warnings.
+- [ ] Check the layer stack and USB geometry for the chosen manufacturer.
+- [ ] Reopen the project from a fresh checkout and repeat the checks.
+- [ ] Record the final dimensions and area after routing is complete.
 
 ## GitHub and form
 
-- [ ] Commit the final KiCad source files
-- [ ] Push to a public GitHub repository
-- [ ] Confirm the repository opens without signing in
-- [ ] Use `https://github.com/S-n-a-z/PCB-Challenge-2026-Submission` as the form link once the repository exists
-- [ ] Prepare the logic deduction and reasoning for the form (do not add it to this public repository unless intentional)
-- [ ] Enter full name
-- [ ] Enter university email address, not a personal address
-- [ ] Enter team name and full member names, or `N/A`
-- [ ] Select year of study
-- [ ] Select university
-- [ ] Add challenge rating and optional comments
-- [ ] Submit the form
+- [ ] Put the finished, checked layout on the repository's main branch.
+- [ ] Confirm the public link opens without signing in.
+- [ ] Add the logic deduction and supporting reasoning to the form.
+- [ ] Complete the participant and team details.
+- [ ] Submit the form before the deadline.
+
+The current layout is a working version. Publishing this branch does not submit an entry to the challenge.

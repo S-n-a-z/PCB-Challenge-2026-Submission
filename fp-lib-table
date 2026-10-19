@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "reg")(type "KiCad")(uri "${KIPRJMOD}/footprints/reg.pretty")(options "")(descr "Register footprint supplied with the challenge"))
+  (lib (name "adder")(type "KiCad")(uri "${KIPRJMOD}/footprints/adder.pretty")(options "")(descr "Adder footprint supplied with the challenge"))
+  (lib (name "3v3_ldo")(type "KiCad")(uri "${KIPRJMOD}/footprints/3v3_ldo.pretty")(options "")(descr "Regulator footprint supplied with the challenge"))
+)

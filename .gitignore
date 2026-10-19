@@ -17,6 +17,7 @@ manufacturing/
 
 # Local notes that must not be published with the submission
 PRIVATE_SUBMISSION_NOTES.md
+.verification/
 
 # Operating-system clutter
 .DS_Store
