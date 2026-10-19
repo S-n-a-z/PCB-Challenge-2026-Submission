@@ -19,7 +19,8 @@ The challenge closes at the end of 19 October 2026. The entry needs a public rep
 - [x] Route the supply, clock and reset networks.
 - [x] Route the mux-to-register links, two-stage synchroniser links and comparator gate links.
 - [x] Check for vias in SMD pads and vias overlapping IC courtyards.
-- [ ] Finish the 63 remaining connections.
+- [ ] Move the two existing `b2` and `b3` vias out of U10's courtyard; `b2` is also in a pad.
+- [ ] Finish the 18 remaining unconnected items in [the routing list](REMAINING_CONNECTIONS.md).
 - [ ] Review traces against the same-layer IC courtyard restriction.
 - [ ] Resolve or account for the symbol and footprint mismatches in the parity report.
 - [ ] Refill all copper zones and run DRC with zero unresolved errors.
